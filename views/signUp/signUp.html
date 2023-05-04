@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <title>Document</title>
+    <link rel="stylesheet" href="views/signUp/signUp.css" />
+  </head>
+  <body>
+    <h1>Sign up for the movie db</h1>
+    <form onsubmit="return false">
+      <fieldset>
+        <legend>Form sign up</legend>
+        <label for="username">Username :</label>
+        <input
+          class="inputItem username"
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your username"
+        /><br /><br />
+        <label for="password">Password :</label>
+        <input
+          class="inputItem password"
+          type="text"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+        /><br /><br />
+        <label for="confirmPassword">Confirm password :</label>
+        <input
+          class="inputItem confirmPassword"
+          type="text"
+          id="confirmPassword"
+          name="confirmPassword"
+          placeholder="Enter your confirm password"
+        /><br /><br />
+        <label for="email">Email :</label>
+        <input
+          class="inputItem email"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+        /><br /><br />
+        <button class="submitBtn">
+          Submit
+        </button>
+      </fieldset>
+    </form>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="/views/signUp/signUp.js"></script>
+</html>
