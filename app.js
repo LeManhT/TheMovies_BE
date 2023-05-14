@@ -4,8 +4,8 @@ const morgan = require("morgan");
 const cors = require("cors");
 const path = require("path");
 const cookieParser = require('cookie-parser')
-const userRouter = require("./routers/userRouter");
-const indexRouter = require("./routers/indexRouter");
+const userRouter = require("./src/api/v1/routers/userRouter");
+const indexRouter = require("./src/api/v1/routers/indexRouter");
 
 const app = express();
 const port = process.env.PORT;
@@ -13,7 +13,7 @@ const port = process.env.PORT;
 app.use(cors()); // cho goi khac cổng
 app.use(morgan("combined"));
 
-app.use("/views", express.static(path.join(__dirname, "./views")));
+app.use("/views", express.static(path.join(__dirname, "./src/api/v1/views")));
 
 //middleware
 app.use(express.urlencoded({ extended: false })); // dùng nhận data từ request body
