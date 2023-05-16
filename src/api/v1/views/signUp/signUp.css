@@ -1,0 +1,13 @@
+.inputItem {
+    width : 100%;
+    margin : 10px 0;
+    padding : 5px 10px;
+    outline : none;
+}
+
+.submitBtn {
+    padding : 5px 18px;
+    &:hover {
+        cursor : pointer;
+    }
+}
